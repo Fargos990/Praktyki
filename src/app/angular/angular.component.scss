@@ -17,13 +17,19 @@
         {
             display:flex;
             flex-wrap: wrap;
+            
+            &__header
+            {
+                flex-basis:100%;
+                text-align: center;
+            }
         }
         &__grid
         {
             display: grid; 
             grid-template-columns: 1fr 1fr 1fr 1fr; 
-            grid-template-rows: 1fr 1fr; 
-            gap: 1em 1em; 
+            grid-template-rows: 2em 1fr; 
+            gap: 1em 2em; 
             grid-template-areas: 
               "header header header header"
               "article1 article2 article3 article4"
@@ -34,22 +40,32 @@
                 grid-area: header;
                 text-align: center;
             }
-            &__paragraph:nth-of-type(1)
+            &__holder
             {
-                grid-area:article1;
+                padding:2em;
+                margin:1em;
+                background-color: $fill-color;
+                border-radius: 20px;
+                box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                &__header
+                {
+                    margin:0.5em 0.5em 1em 0em;
+                    
+                }
+
+                &__paragraph
+                {
+                    line-height: 1.6em;
+                }
             }
-            &__paragraph:nth-of-type(2)
+            &__holder:hover
             {
-                grid-area:article2;
+                transform: translate(0,-6ox);
+                box-shadow: -10px 10px 25px 0 rgba(143, 64, 248, 0.5), -10px 10px 25px 0 rgba(39, 200, 255, 0.5);
             }
-            &__paragraph:nth-of-type(3)
-            {
-                grid-area:article3;
-            }
-            &__paragraph:nth-of-type(4)
-            {
-                grid-area:article4;
-            }
+
         }
 
     }
