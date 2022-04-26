@@ -12,14 +12,49 @@
     &__article
     {
         flex-basis: 100%;
-        &__header
+
+        &__flex
         {
             display:flex;
-            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__grid
+        {
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr 1fr; 
+            grid-template-rows: 1fr 1fr; 
+            gap: 1em 1em; 
+            grid-template-areas: 
+              "header header header header"
+              "article1 article2 article3 article4"
+              ; 
+
+            &__header
+            {
+                grid-area: header;
+                text-align: center;
+            }
+            &__paragraph:nth-of-type(1)
+            {
+                grid-area:article1;
+            }
+            &__paragraph:nth-of-type(2)
+            {
+                grid-area:article2;
+            }
+            &__paragraph:nth-of-type(3)
+            {
+                grid-area:article3;
+            }
+            &__paragraph:nth-of-type(4)
+            {
+                grid-area:article4;
+            }
         }
 
     }
-    &__holder
+
+    &__btnholder
     {
         display:flex;
 
