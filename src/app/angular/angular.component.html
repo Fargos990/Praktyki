@@ -5,11 +5,14 @@
 
     <h2 class="container__article__flex__header" >Co to jest Angular?</h2>
     
-    <p class="container__article__flex__paragraph">Angular jest to otwarty framework, który został napisany w języku TypeScript i jest wspierany oraz rozwijany przez Google. 
+    <div class="container__article__flex__holder">
+    
+    <p class="container__article__flex__holder__paragraph">Angular jest to otwarty framework, który został napisany w języku TypeScript i jest wspierany oraz rozwijany przez Google. 
     Angular początkowo miał być wersją 2 popularnego frameworku AngularJS, 
     jednak decyzje projektowe sprawiły, że Google zdecydował się wydać go jako osobny byt. 
     Angular wydany jest na licencji MIT.</p>    
     
+    </div>
     </article>
    
     <article class="container__article container__article__grid">
@@ -61,15 +64,25 @@
 
     </article>
     
-    <article class="container__article">
-    <h2 class="">Gdzie się używa Angulara?</h2>
-
-    <p class="">Angular jest używany do tworzenia stron techniką SPA (Single Page Apllication).</p>
-
-    <h2 class="">Firmy, które używają Angulara</h2>
-    <ul class="">
-        <li *ngFor="let i of firmy_angular" class="">{{i}}</li>
+    <article class="container__article container__article__flex">
+    <h2 class="container__article__flex__header container__article__flex__header--fix">Gdzie się używa Angulara?</h2>
+    
+    <div class="container__article__flex__holder container__article__flex__holder--fix">
+ 
+    <p class="container__article__flex__holder__paragraph container__article__flex__holder__paragraph--fix">Angular jest używany do wytwarzania stron techniką SPA (Single Page Apllication).</p>
+    
+    </div>
+    <figure class="container__article__flex__figure"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/640px-Angular_full_color_logo.svg.png">
+    </figure>
+    <h2 class="container__article__flex__header container__article__flex__header--fix">Firmy, które używają Angulara</h2>
+    
+    <div class="container__article__flex__listholder">
+    
+    <ul class="container__article__flex__listholder__list">
+        <li *ngFor="let i of firmy_angular" class="container__article__flex__listholder__list__element">{{i}}</li>
     </ul>
+
+    </div>
 
     </article>
 
