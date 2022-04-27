@@ -2,42 +2,57 @@
 
 .container
 {
+    flex-basis: 100%;
     display:flex;
     flex-wrap: wrap;
     &__article
     {
-        flex-basis: 100%;
-        display:flex;
-        flex-wrap: wrap;
+        display: grid; 
+        grid-template-columns: 1.2fr 0.8fr; 
+        grid-template-rows: 0.2fr auto 2fr auto; 
+        gap: 1em 1em; 
+        grid-template-areas: 
+          "header header"
+          "article1 image"
+          "list image"
+          "article2 image"; 
+      
         &__header
         {
+            grid-area: header;
             margin-top:1em;
-            flex-basis:100%;
             text-align: center;
             font-size:1.15em;
         }
         &__holder
         {
+            &--first
+            {
+                grid-area:article1;
+            }
+            &--second
+            {
+                grid-area:article2;
+            }
             margin-left:1em;
             margin-top:1em;
             margin-bottom:2em;
-            flex-basis: 100%;
             display:flex;
             flex-wrap: wrap;
             justify-content: left;
-
 
             &__paragraph
             {
                 flex-basis: 75%;
                 border-left:3px solid $fill-color;
                 padding:0.5em;
+                height:fit-content;
             }
             
         }
         &__listholder
         {
-            flex-basis: 100%;
+            grid-area:list;
             display:flex;
             flex-wrap: wrap;
             justify-content: left;
@@ -61,6 +76,10 @@
                 margin-top:1em;
                 
             }
+        }
+        &__imageholder
+        {
+            grid-area: image;
         }
     }
 }
