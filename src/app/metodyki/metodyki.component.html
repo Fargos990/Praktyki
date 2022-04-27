@@ -1,1 +1,19 @@
-<p>metodyki works!</p>
+<div class="container">
+
+    <article class="container__article">
+        <h2 class="container__article__header">
+            Czym są metodyki wytwarzania oprogramowania?
+        </h2>
+        <p class="contianer__article__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minima, illo quidem officia totam nesciunt rerum assumenda aut doloribus quod magni accusamus, eos, unde consequatur architecto laudantium dolor ratione expedita.
+        </p>
+    </article>
+
+    <div class="container__listholder">
+        <ul class="container__listholder__list">
+            <li class="container__listholder__list__element" *ngFor="let item of modele">
+                <a class="container__listholder__list__element__href" [routerLink]="item">{{item}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

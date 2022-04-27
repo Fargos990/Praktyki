@@ -1,3 +1,5 @@
+@import 'src/assets/colors.scss';
+
 *
 {
     margin:0;
@@ -10,4 +12,11 @@
 html,body
 {
     height:auto;
+}
+
+.container
+{
+    color:$font-color;
+    background-color: $bgc-color;
+    height:100%;
 }

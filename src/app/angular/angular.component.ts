@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./angular.component.scss']
 })
 export class AngularComponent {
+
   firmy_angular = ['Google','Microsoft','Apple','McDonald','UPS','Adobe']
-
-
+  
 }
