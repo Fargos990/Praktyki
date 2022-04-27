@@ -11,7 +11,7 @@ export class KaskadowyComponent{
   'Projekt Systemu (poszczególnych struktur itp.)',
   'Implementacja (wytworzenie kodu)',
   'Testowanie (poszczególnych elementów systemu i elemntów połączonych w całość)',
-  'Pilęgnacja Powstałego Systemu'
+  'Pielęgnacja Powstałego Systemu'
 ];
 
 }
