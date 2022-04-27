@@ -1,1 +1,19 @@
-<p>kaskadowy works!</p>
+<div class="container">
+    <article class="container__article">
+        <h2 class="container__article__header">Kaskadowy</h2>
+
+        <div class="container__article__holder">
+            <p class="container__article__holder__paragraph">
+                Model kaskadowy polega na wykonywaniu podstawowych czynności jako odrębnych faz projektowych, kolejno po sobie. 
+
+                Każda czynność to schodek:
+            </p>
+            <ul class="container__article__holder__list">
+                    <li *ngFor="let item of kroki">{{item}}</li>
+            </ul>
+            <p class="container__article__holder__paragraph">
+                Jeśli któraś z faz zwróci niesatysfakcjonujący produkt cofamy się wykonując kolejne iteracje aż do momentu kiedy otrzymamy satysfakcjonujący produkt na końcu schodków.
+            </p>
+        </div>
+    </article>
+</div>

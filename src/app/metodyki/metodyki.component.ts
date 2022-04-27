@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class MetodykiComponent {
 
   modele = ['kaskadowy','spiralny','prototypowy','agile'];
+
+  CapitalizeFirstLetter(value : string)
+  {
+    return value.charAt(0).toUpperCase() + value.slice(1);
+  }
 }

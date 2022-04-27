@@ -10,8 +10,9 @@ import { KaskadowyComponent } from './kaskadowy/kaskadowy.component';
 const appRoutes : Routes = 
 [
   { path: '', component:AngularComponent},
-  { path: 'metodyki', component:MetodykiComponent},
-  {path:'metodyki/kaskadowy', component:KaskadowyComponent},
+  { path: 'metodyki', component:MetodykiComponent, children:[
+    { path:'kaskadowy', component:KaskadowyComponent }
+  ]},
   {path:'metodyki/spiralny', component:AngularComponent},
   {path:'metodyki/prototypowy', component:AngularComponent},
   {path:'metodyki/agile', component:AngularComponent},
