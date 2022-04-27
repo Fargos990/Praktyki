@@ -6,12 +6,14 @@ import { AngularComponent } from './angular/angular.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MetodykiComponent } from './metodyki/metodyki.component';
 import { KaskadowyComponent } from './kaskadowy/kaskadowy.component';
+import { SpiralnyComponent } from './spiralny/spiralny.component';
 
 const appRoutes : Routes = 
 [
   { path: '', component:AngularComponent},
   { path: 'metodyki', component:MetodykiComponent, children:[
-    { path:'kaskadowy', component:KaskadowyComponent }
+    { path:'kaskadowy', component:KaskadowyComponent },
+    { path:'spiralny', component:SpiralnyComponent },
   ]},
   {path:'metodyki/spiralny', component:AngularComponent},
   {path:'metodyki/prototypowy', component:AngularComponent},
@@ -24,7 +26,8 @@ const appRoutes : Routes =
     AppComponent,
     AngularComponent,
     MetodykiComponent,
-    KaskadowyComponent
+    KaskadowyComponent,
+    SpiralnyComponent
   ],
   imports: [
     BrowserModule,

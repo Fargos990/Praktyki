@@ -9,13 +9,13 @@
     {
         display: grid; 
         grid-template-columns: 0.9fr 1.1fr; 
-        grid-template-rows: 0.2fr auto 1.8fr auto; 
+        grid-template-rows: 0.2fr auto 2fr auto; 
         gap: 1em 1em; 
         grid-template-areas: 
           "header header"
           "article1 image"
           "list image"
-          "article2 image"; 
+          "list image"; 
       
         &__header
         {
@@ -48,7 +48,6 @@
                 border-left:3px solid $fill-color;
                 padding:0.5em;
                 height:fit-content;
-                
             }
             
         }
@@ -60,7 +59,7 @@
             justify-content: left;
             
             &__list
-            {   
+            {
                 list-style: none;
                 padding:1em;
 
@@ -75,7 +74,7 @@
             &__header
             {
                 margin-left:1em;
-                margin-top:.5em;
+                margin-top:1em;
                 
             }
         }
@@ -87,7 +86,9 @@
 
             &__image
             {
-                height:43vh;
+                margin-left:3em;
+                margin-bottom:3em;
+                height:70vh;
                 box-shadow: -3px 3px 7px 0 rgba(143, 64, 248, 0.5), 6px 6px 7px 0 rgba(39, 200, 255, 0.5);
             }
         }
