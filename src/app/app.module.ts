@@ -3,14 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AngularComponent } from './angular/angular.component';
+import { RouterModule, Routes } from '@angular/router';
+import { MetodykiComponent } from './metodyki/metodyki.component';
+
+const appRoutes : Routes = 
+[
+  { path: '', component:AngularComponent},
+  { path: 'metodyki', component:MetodykiComponent},
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    AngularComponent
+    AngularComponent,
+    MetodykiComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
