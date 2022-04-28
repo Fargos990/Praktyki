@@ -101,3 +101,8 @@
         flex-wrap: wrap;
     }
 }
+
+.active
+{
+    box-shadow: -5px 5px 10px 0 rgba(143, 64, 248, 0.5), -5px 5px 10px 0 rgba(39, 200, 255, 0.5);
+}

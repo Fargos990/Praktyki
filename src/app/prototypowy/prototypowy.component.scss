@@ -1,0 +1,95 @@
+@import 'src/assets/colors.scss';
+
+.container
+{
+    flex-basis: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    &__article
+    {
+        display: grid; 
+        grid-template-columns: 0.9fr 1.1fr; 
+        grid-template-rows: 0.2fr auto 1.8fr auto; 
+        gap: 1em 1em; 
+        grid-template-areas: 
+          "header header"
+          "article1 image"
+          "list image"
+          "article2 image"; 
+      
+        &__header
+        {
+            grid-area: header;
+            margin-top:1em;
+            margin-right:5em;
+            text-align: center;
+            font-size:1.15em;
+        }
+        &__holder
+        {
+            &--first
+            {
+                grid-area:article1;
+            }
+            &--second
+            {
+                grid-area:article2;
+            }
+            margin-left:1em;
+            margin-top:1em;
+            margin-bottom:2em;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: left;
+
+            &__paragraph
+            {
+                flex-basis: 100%;
+                border-left:3px solid $fill-color;
+                padding:0.5em;
+                height:fit-content;
+                
+            }
+            
+        }
+        &__listholder
+        {
+            grid-area:list;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            
+            &__list
+            {   
+                list-style: none;
+                padding:1em;
+
+                &__element
+                {
+                    font-size:1.1em;
+                    margin: .7em .7em 1.7em 0;
+                    padding:.3em;
+                    border-left:3px solid $fill-color;
+                }
+            }
+            &__header
+            {
+                margin-left:1em;
+                margin-top:.5em;
+                
+            }
+        }
+        &__imageholder
+        {
+            grid-area: image;
+            display:flex;
+            align-items: center;
+
+            &__image
+            {
+                height:43vh;
+                box-shadow: -3px 3px 7px 0 rgba(143, 64, 248, 0.5), 6px 6px 7px 0 rgba(39, 200, 255, 0.5);
+            }
+        }
+    }
+}

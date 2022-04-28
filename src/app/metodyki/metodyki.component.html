@@ -14,7 +14,7 @@
     <aside class="container__listholder">
         <ul class="container__listholder__list">
             <li class="container__listholder__list__element" *ngFor="let item of modele">
-                <a class="container__listholder__list__element__href" [routerLink]="item">{{CapitalizeFirstLetter(item)}}</a>
+                <a class="container__listholder__list__element__href" [routerLink]="item" routerLinkActive="active">{{CapitalizeFirstLetter(item)}}</a>
             </li>
             <li class="container__listholder__list__element">
                 <a class="container__listholder__list__element__href" routerLink="/">Wroc</a>

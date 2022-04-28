@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MetodykiComponent } from './metodyki/metodyki.component';
 import { KaskadowyComponent } from './kaskadowy/kaskadowy.component';
 import { SpiralnyComponent } from './spiralny/spiralny.component';
+import { PrototypowyComponent } from './prototypowy/prototypowy.component';
 
 const appRoutes : Routes = 
 [
@@ -14,9 +15,8 @@ const appRoutes : Routes =
   { path: 'metodyki', component:MetodykiComponent, children:[
     { path:'kaskadowy', component:KaskadowyComponent },
     { path:'spiralny', component:SpiralnyComponent },
+    { path:'prototypowy', component:PrototypowyComponent },
   ]},
-  {path:'metodyki/spiralny', component:AngularComponent},
-  {path:'metodyki/prototypowy', component:AngularComponent},
   {path:'metodyki/agile', component:AngularComponent},
   {path: '**', redirectTo:''}
 ];
@@ -27,7 +27,8 @@ const appRoutes : Routes =
     AngularComponent,
     MetodykiComponent,
     KaskadowyComponent,
-    SpiralnyComponent
+    SpiralnyComponent,
+    PrototypowyComponent
   ],
   imports: [
     BrowserModule,
