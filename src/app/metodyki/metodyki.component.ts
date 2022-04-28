@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
 })
 export class MetodykiComponent {
 
-  modele = ['kaskadowy','spiralny','prototypowy','agile'];
+  modele = ['kaskadowy','spiralny','prototypowy','agile','ekstremalne'];
 
   CapitalizeFirstLetter(value : string)
   {
     return value.charAt(0).toUpperCase() + value.slice(1);
   }
+
 }

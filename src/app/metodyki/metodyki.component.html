@@ -6,14 +6,15 @@
         </h2>
         <div class="container__article__holder">
         <p class="container__article__holder__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minima, illo quidem officia totam nesciunt rerum assumenda aut doloribus quod magni accusamus, eos, unde consequatur architecto laudantium dolor ratione expedita.
+            Metodyka wytwarzania oprogramowania jest to zestaw pojęć, modeli, języków, technik i sposobów postępowania służący do analizy projektowanego systemu.
+            Jest ona powiązana z rekordem służącym do dokumentowania wyników faz projektu jako środek wspomagający ludzką pamięć i wyobraźnię. Wspomaga także komunikacje w zespołach oraz pomiędzy wykonawcami a zleceniodawcą.
         </p>
     </div>
     </article>
 
     <aside class="container__listholder">
         <ul class="container__listholder__list">
-            <li class="container__listholder__list__element" *ngFor="let item of modele">
+            <li class="container__listholder__list__element" *ngFor="let item of modele; let i = index">
                 <a class="container__listholder__list__element__href" [routerLink]="item" routerLinkActive="active">{{CapitalizeFirstLetter(item)}}</a>
             </li>
             <li class="container__listholder__list__element">

@@ -8,6 +8,7 @@ import { MetodykiComponent } from './metodyki/metodyki.component';
 import { KaskadowyComponent } from './kaskadowy/kaskadowy.component';
 import { SpiralnyComponent } from './spiralny/spiralny.component';
 import { PrototypowyComponent } from './prototypowy/prototypowy.component';
+import { EkstremalneComponent } from './ekstremalne/ekstremalne.component';
 
 const appRoutes : Routes = 
 [
@@ -16,6 +17,7 @@ const appRoutes : Routes =
     { path:'kaskadowy', component:KaskadowyComponent },
     { path:'spiralny', component:SpiralnyComponent },
     { path:'prototypowy', component:PrototypowyComponent },
+    { path:'ekstremalne', component:EkstremalneComponent },
   ]},
   {path:'metodyki/agile', component:AngularComponent},
   {path: '**', redirectTo:''}
@@ -28,7 +30,8 @@ const appRoutes : Routes =
     MetodykiComponent,
     KaskadowyComponent,
     SpiralnyComponent,
-    PrototypowyComponent
+    PrototypowyComponent,
+    EkstremalneComponent
   ],
   imports: [
     BrowserModule,
