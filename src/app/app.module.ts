@@ -10,6 +10,7 @@ import { SpiralnyComponent } from './spiralny/spiralny.component';
 import { PrototypowyComponent } from './prototypowy/prototypowy.component';
 import { EkstremalneComponent } from './ekstremalne/ekstremalne.component';
 import { AgileComponent } from './agile/agile.component';
+import { ScrumComponent } from './scrum/scrum.component';
 
 const appRoutes : Routes = 
 [
@@ -20,6 +21,7 @@ const appRoutes : Routes =
     { path:'prototypowy', component:PrototypowyComponent },
     { path:'ekstremalne', component:EkstremalneComponent },
     { path:'agile', component:AgileComponent },
+    { path:'scrum', component:ScrumComponent },
   ]},
   {path: '**', redirectTo:''}
 ];
@@ -33,7 +35,8 @@ const appRoutes : Routes =
     SpiralnyComponent,
     PrototypowyComponent,
     EkstremalneComponent,
-    AgileComponent
+    AgileComponent,
+    ScrumComponent
   ],
   imports: [
     BrowserModule,
