@@ -36,10 +36,11 @@
 
     &__listholder
     {
+        margin-top:2.5em;
         flex-basis: 22%;
         display:flex;
         justify-content: left;
-        align-items: center;
+        align-items: flex-start;
         &__list
         {
             padding:0.1em;
@@ -62,7 +63,7 @@
                     padding: 20px 40px;
                     font-size:1.15em;
                     position: relative;
-                    margin:1em;
+                    margin:0.5em;
 
                     overflow:hidden;
                     color:$button-color;

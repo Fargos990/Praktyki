@@ -2,16 +2,33 @@
 
 .container
 {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr 0.5fr; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+      "article1 article1 article1 article1"
+      "article2 article2 article2 article2"
+      "article2 article2 article2 article2"
+      "article3 article3 image image"
+      "article3 article3 image image"
+      ". . . button"; 
+  
+
     &__article
     {
-        flex-basis: 100%;
 
         &__flex
         {
+            &--first
+            {
+                grid-area: article1;
+            }
+            &--second
+            {
+                grid-area:article3;
+            }
             display:flex;
             flex-wrap: wrap;
             
@@ -93,6 +110,7 @@
         }
         &__grid
         {
+            grid-area:article2;
             display: grid; 
             grid-template-columns: 1fr 1fr 1fr 1fr; 
             grid-template-rows: 2em 1fr; 
@@ -135,7 +153,7 @@
 
     &__btnholder
     {
-        flex-basis: 100%;
+        grid-area:button;
         display:flex;
         justify-content: right;
         &__button
@@ -174,5 +192,11 @@
                 }
             }
         }
+    }
+
+    &__figure
+    {
+        grid-area:image;
+
     }
 }
