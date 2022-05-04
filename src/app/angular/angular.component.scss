@@ -145,6 +145,10 @@
 
         display:flex;
         justify-content: right;
+        &--fix
+        {
+            justify-content: left;
+        }
         &__button
         {
             text-decoration: none;

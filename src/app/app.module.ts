@@ -11,6 +11,7 @@ import { PrototypowyComponent } from './prototypowy/prototypowy.component';
 import { EkstremalneComponent } from './ekstremalne/ekstremalne.component';
 import { AgileComponent } from './agile/agile.component';
 import { ScrumComponent } from './scrum/scrum.component';
+import { ProcesComponent } from './proces/proces.component';
 
 const appRoutes : Routes = 
 [
@@ -23,6 +24,7 @@ const appRoutes : Routes =
     { path:'agile', component:AgileComponent },
     { path:'scrum', component:ScrumComponent },
   ]},
+  {path:'proces',component:ProcesComponent},
   {path: '**', redirectTo:''}
 ];
 
@@ -36,7 +38,8 @@ const appRoutes : Routes =
     PrototypowyComponent,
     EkstremalneComponent,
     AgileComponent,
-    ScrumComponent
+    ScrumComponent,
+    ProcesComponent
   ],
   imports: [
     BrowserModule,
