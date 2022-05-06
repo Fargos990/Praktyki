@@ -1,1 +1,80 @@
-<p>przyklad works!</p>
+<div class="container">
+
+    <header class="container__header"> <h2 class="container__header__title">Przypuszczający proces tworzenia aplikacji Snapchat</h2> </header>
+
+    <article class="container__article">
+        <h3 class="container__article__title">Pomysł</h3>
+        
+        <div class="container__article__holder">
+
+        <p class="container__article__holder__paragraph">
+            Jeden z założycieli zauważył deficyt na rynku medi społecznościowych. 
+            Brakowało aplikacji, która usuwałaby przesłane materiały po jakimś czasie.
+            Ustalono, że celem projektu stało się stworzenie aplikacji, która pozwoliłaby wysyłać media, 
+            które usuwałyby się po określonym czasie.
+            Aplikacja miała być skierowana do grona ludzi w przedziale wiekowym 12-24. 
+            Głównym urządzeniem na którym miała aplikacja działać miał być telefon komórkowy.
+        </p>
+
+    </div>
+    
+    </article>
+
+    <article class="container__article">
+        <h3 class="container__article__title">Cele</h3>
+
+        <div class="container__article__listholder">
+
+            <span class="container__article__listholder__undertitle">Utworzono listę specyfikacji jaką aplikacja musi spełniać: </span>
+
+            <ul class="container__article__listholder__list">
+                <li class="container__article__listholder__list__element" *ngFor="let item of cele">{{item}}</li>
+            </ul>
+        
+        </div>
+
+    </article>
+
+    <article class="container__article">
+        <h3 class="container__article__title">Prototyp</h3>
+        
+        <div class="container__article__holder">
+        
+        <p class="container__article__holder__paragraph">
+            Gdy już posiadano listę specyfikacji, zaprojektowano początkowy wygląd aplikacji.
+            Zatrudniono także programistów mających napisać prototyp aplikacji.
+            Głównym językiem programowania stał się JavaScript, wraz z Python'em, PHP i Cocoa.
+            Gdy prototyp został ukończony, wypuszczono go na systemy IOS i Android do 
+            wykonania niezbędnych testów i otrzymania feedbacku od użytkowników.
+        </p>
+    </div>
+
+    </article>
+
+    <article class="container__article">
+        <h3 class="container__article__title">Wydanie i dalsze aktualizowanie</h3>
+        
+        <div class="container__article__holder">
+
+        <p class="container__article__holder__paragraph">
+            Po otrzymaniu informacji zwrotnej od użytkowników wprowadzono poprawki oraz dodano funkcje zarabiana aplikacji na reklamach firm wyświetlanych podczas przeglądania medii.
+            Snapchat jest jedną z najpopularniejszych aplikacji do wysyłania medii. Nadal jest on aktualizowany, są dodawane do niego nowe funkcje np. ostatnio dodano tzw. 'shortsy', krótkie filmiki na których autorzy mogą zarabiać.
+        </p>
+    </div>
+
+    </article>
+
+    <figure class="container__figure">
+        <img src="assets/images/snapchat.png" alt="snapchat" class="container__figure__image">
+    </figure>
+
+    <figure class="container__figure">
+        <img src="assets/images/jezyki.png" alt="jezyki" class="container__figure__image">
+    </figure>
+
+    <div class="container__btnholder">
+        <a class="container__btnholder__button container__btnholder__button__next" routerLink="/proces">Wroc</a> 
+    </div>
+
+
+</div>
