@@ -12,7 +12,7 @@
       "article2 article2 image1 image1"
       "article3 article3 image2 image2"
       "article4 article4 image2 image2"
-      ". . . button";
+      ". . button button";
       
     &__header
     {
@@ -136,7 +136,11 @@
 
         display:flex;
         justify-content: right;
-
+        &--fix
+        {
+            justify-content: right;
+            margin-right:16em;
+        }
         &__button
         {
             text-decoration: none;
